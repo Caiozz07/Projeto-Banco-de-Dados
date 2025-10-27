@@ -46,6 +46,14 @@ CREATE TABLE Visitantes (
     data_entrada DATETIME,
     data_saida DATETIME
 );
+CREATE TABLE Informativos (
+    id_informativo INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    conteudo TEXT NOT NULL,
+    data_publicacao DATE NOT NULL,
+    id_usuario INT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario)
+);
 INSERT INTO Perfis (nome_perfil) VALUES
 ('Morador'),
 ('Síndico'),
