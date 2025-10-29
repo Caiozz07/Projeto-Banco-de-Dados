@@ -1,3 +1,6 @@
+CREATE DATABASE condominio;
+USE condominio;
+
 CREATE TABLE Perfis (
     id_perfil INT AUTO_INCREMENT PRIMARY KEY,
     nome_perfil VARCHAR(20) NOT NULL
